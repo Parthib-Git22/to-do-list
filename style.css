@@ -31,9 +31,10 @@
 }
  .row{
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    position: relative;
+    /* display: flex; */
+    /* justify-content: space-around;
+    align-items: center; */
     background: #edeef0;
     border-radius: 1.8rem;
     padding-left: 1.25rem;
@@ -48,6 +49,13 @@
     font-size: 1.1rem;
 }
 .add-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     outline: none;
     padding: 1rem 1.75rem;
@@ -68,8 +76,8 @@ ul li{
 ul li::before{
     content: '';
     position: absolute;
-    height: 1.67rem;
-    width: 1.67rem;
+    height: 28px;
+    width: 28px;
     border-radius: 50%;
     background-image: url('/To-Do List/img/unchecked.png');
     background-size: contain;
