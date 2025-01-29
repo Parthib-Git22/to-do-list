@@ -32,7 +32,7 @@
  .row{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: #edeef0;
     border-radius: 1.8rem;
