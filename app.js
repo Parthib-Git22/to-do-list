@@ -26,7 +26,7 @@ listContainer.addEventListener("click",function(e){
         saveData();
     }
     else if(e.target.tagName === "SPAN"){
-        e.target.parentElement.remove();
+        e.target.parentElement.remove(); // LI is the parent element
         saveData();
     }
 },false);

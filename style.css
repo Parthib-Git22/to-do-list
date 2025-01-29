@@ -8,61 +8,59 @@
     width: 100%;
     min-height:100vh;
     background: linear-gradient(135deg,#153677,#4e085f);
-    padding: 10px;
+    padding: .75rem;
+    overflow-x: hidden;
 }
 .todo-app{
-    width: 100%;
-    max-width: 540px;
+    width: 30rem;
     background: white;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
-    border-radius: 10px;
+    margin: 6rem auto;
+    padding: 2.75rem 2.25rem;
+    border-radius: .75rem;
 }
-/* img{
-    width: 25px;
-    height: 25px;
-} */
 .todo-app h2{
     color: #002765;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    justify-content: center;
+    margin-bottom: 1.25rem;
 }
 .todo-app h2 img{
-    width: 30px;
-    margin-left: 10px;
+    width: 1.75rem;
+    margin-left: .75rem;
 }
  .row{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #edeef0;
-    border-radius: 30px;
-    padding-left: 20px;
-    margin-bottom: 25px; 
+    border-radius: 1.8rem;
+    padding-left: 1.25rem;
+    margin-bottom: 1.5rem; 
 }
-input{
-    flex: 1;  /* takes full width */
+#input-box{
+    /* flex: 1; */
     border: none;
     outline: none;
     background: transparent;
-    padding: 10px;
-    font-size: 1.2rem;
+    padding: .75rem .5rem;
+    font-size: 1.1rem;
 }
-button{
+.add-btn{
     border: none;
     outline: none;
-    padding: 16px 50px;
+    padding: 1rem 1.75rem;
     background: #ff5945;
     color: white;
-    font-size: 16px;
+    font-size: 1.1rem;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 1.8rem;
 }
 ul li{
     list-style: none;
-    font-size: 17px;
-    padding: 12px 8px 12px 50px;
+    font-size: 1rem;
+    padding: .75rem .5rem .75rem 3rem;
     user-select: none;
     cursor: pointer;
     position: relative;
@@ -70,14 +68,14 @@ ul li{
 ul li::before{
     content: '';
     position: absolute;
-    height: 28px;
-    width: 28px;
+    height: 1.67rem;
+    width: 1.67rem;
     border-radius: 50%;
     background-image: url('/To-Do List/img/unchecked.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    top: 9px;
-    left: 8px;
+    top: .55rem;
+    left: .5rem;
 }
 ul li.checked{
     color: #555;
@@ -89,15 +87,49 @@ ul li.checked::before{
 ul li span{
     position: absolute;
     right: 0;
-    top: 5px;
-    width: 40px;
-    height: 40px;
+    top: .3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
-    font-size: 22px;
+    font-size: 1.375rem;
     color: #555;
-    line-height: 40px;
+    line-height: 2.5rem;
     text-align: center;
 }
 ul li span:hover{
     background: #edeef0;
+}
+@media (max-width: 640px) {
+    .todo-app{
+        width: 22rem;
+        padding: 1.5rem;
+    }
+    .row{
+        padding-left: .5rem;
+    }
+    #input-box{
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    .add-btn{
+        padding: .7rem 1.2rem;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 430px) {
+    .todo-app{
+        width: 18rem;
+        padding: 1rem;
+    }
+    .row{
+        padding-left: .75rem;
+    }
+    #input-box{
+        font-size: .9rem;
+        padding: .4rem;
+    }
+    .add-btn{
+        padding: .5rem 1rem;
+        font-size: .9rem;
+    }
 }
