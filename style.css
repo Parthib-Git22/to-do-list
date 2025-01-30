@@ -32,16 +32,12 @@
  .row{
     width: 100%;
     position: relative;
-    /* display: flex; */
-    /* justify-content: space-around;
-    align-items: center; */
     background: #edeef0;
     border-radius: 1.8rem;
     padding-left: 1.25rem;
     margin-bottom: 1.5rem; 
 }
 #input-box{
-    /* flex: 1; */
     border: none;
     outline: none;
     background: transparent;
@@ -80,10 +76,11 @@ ul li::before{
     width: 28px;
     border-radius: 50%;
     background-image: url('/To-Do List/img/unchecked.png');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     top: .55rem;
     left: .5rem;
+    border: 1px solid black;
 }
 ul li.checked{
     color: #555;
@@ -91,6 +88,7 @@ ul li.checked{
 }
 ul li.checked::before{
     background-image: url('/To-Do List/img/checked.png');
+    background-size: cover;
 }
 ul li span{
     position: absolute;
